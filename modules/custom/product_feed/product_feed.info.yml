@@ -1,0 +1,7 @@
+name: 'Product Feed'
+type: module
+description: 'Provides an XML feed of products at /product.xml for multi-domain multilingual sites.'
+core_version_requirement: '^11'
+package: Custom
+dependencies:
+  - drupal:node
