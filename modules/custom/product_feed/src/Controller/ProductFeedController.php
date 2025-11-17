@@ -17,12 +17,20 @@ use Symfony\Component\HttpFoundation\Response;
 class ProductFeedController extends ControllerBase {
 
   /**
+   * The feed generator service.
+   */
+  protected readonly ProductFeedGenerator $generator;
+
+  /**
    * Constructs the controller.
    */
   public function __construct(
-    protected readonly ProductFeedGenerator $generator,
-    protected readonly LanguageManagerInterface $languageManager,
-  ) {}
+    ProductFeedGenerator $generator,
+    LanguageManagerInterface $languageManager,
+  ) {
+    $this->generator = $generator;
+    $this->languageManager = $languageManager;
+  }
 
   /**
    * {@inheritdoc}
