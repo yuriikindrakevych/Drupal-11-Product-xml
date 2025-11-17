@@ -1,7 +1,7 @@
 product_feed.xml:
   path: '/product.xml'
   defaults:
-    _controller: '\\Drupal\\product_feed\\Controller\\ProductFeedController::feed'
+    _controller: '\Drupal\product_feed\Controller\ProductFeedController::feed'
     _title: 'Product feed'
   requirements:
     _permission: 'access content'
