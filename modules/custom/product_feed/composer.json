@@ -1,0 +1,14 @@
+{
+  "name": "custom/product_feed",
+  "description": "Provides a multilingual product feed at /product.xml",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Drupal\\product_feed\\": "src/"
+    }
+  }
+}

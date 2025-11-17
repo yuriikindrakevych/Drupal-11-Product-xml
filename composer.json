@@ -1,0 +1,11 @@
+{
+  "name": "custom/drupal-11-product-xml",
+  "description": "Drupal 11 product feed demo with custom PSR-4 autoloading",
+  "type": "project",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Drupal\\product_feed\\": "modules/custom/product_feed/src/"
+    }
+  }
+}
